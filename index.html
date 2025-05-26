@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" />
+
+    <style>
+        .service-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin: 1rem;
+            max-width: 300px;
+            flex: 1 1 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="site-header-wrapper">
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">Benjamin Franklin Printing Co.</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="letterpressSpecialty.html">Letterpress Specialty</a></li>
+                    <li><a href="offset.html">Offset Printing</a></li>
+                    <li><a href="quotes.html">Quotes</a></li>
+                    <li><a href="union-label.html">Union Label</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome!</h1>
+        <h4>Last Updated: 5/24/2025</h4>
+        <h2>Commercial Letterpress and Offset Printing Since 1924</h2>
+        <p>Your one-stop shop for all printing needs — from traditional to modern, personal to political.</p>
+    </div>
+</section>
+
+<!-- Services Section (Cards) -->
+<section class="services-section">
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Offset & Letterpress</h3>
+            <p>Traditional offset and classic letterpress printing with precision and quality.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Stationery & Brochures</h3>
+            <p>Custom-designed color brochures, stationery, business cards, and more.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Election Printing</h3>
+            <p>Ballots, absentee envelopes, campaign materials — all secured and streamlined.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Union Label Certified</h3>
+            <p>Allied Trades Unions Printer — request our Union Label with your order.</p>
+        </div>
+    </div>
+</section>
+
+<section class="button">
+    <div class="button-container">
+        <button id="contactUsButton" onclick="window.location.href = 'contactInformation.html';">Contact Us</button>
+    </div>
+</section>
+
+<!-- Footer -->
+<div id="footer">
+    <footer>
+        Developed by Freelancer Connor J. Gentry, © All Rights for Benj. Franklin Printing Co Reserved. 2025.
+    </footer>
+</div>
+
+</body>
+</html>
