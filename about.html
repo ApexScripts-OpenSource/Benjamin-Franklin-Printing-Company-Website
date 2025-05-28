@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Benj. Franklin Printing Co.</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap"
+    />
 
     <style>
-        #heroTitleAbout {
-            font-size: xxx-large;
+        .images-section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            padding: 40px 20px;
         }
 
-        #heroSubtitleAbout {
-            font-size: xx-large;
+        .image-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 280px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative; /* Added to position the label correctly */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-label {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 10px; /* Reduced padding */
+            line-height: 1.4;
+            margin: 0;
+            border-top: 1px solid #002244;
+            position: absolute; /* Changed to absolute positioning */
+            bottom: 0; /* Aligns the label to the bottom */
+            left: 0;
+            right: 0; /* Ensures it stretches across the card */
+        }
+
+
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .image-label p {
+            margin: 0;
         }
     </style>
+
 </head>
 
 <body>
@@ -60,6 +105,41 @@
 
     <h1>Our Mission</h1>
     <p>“We’re a mix of old and new technologies,” blending everything from old-school letterpress printing to digital printing. We aim to be competitive while offering personalized service to fit your business needs.</p>
+</div>
+
+<div id="images-section">
+    <div class="images-section-container">
+        <div class="image-card">
+            <img src="images/image2.jpeg" alt="Team Image 2" />
+            <div class="image-label">
+                <p>The outside of the Store</p>
+            </div>
+        </div>
+        <div class="image-card">
+            <img src="images/image3.jpeg" alt="Team Image 3" />
+            <div class="image-label">
+                <p>The Outside of the Store (Closer Up)</p>
+            </div>
+        </div>
+        <div class="image-card">
+            <img src="images/image4.jpeg" alt="Team Image 4" />
+            <div class="image-label">
+                <p>Company Opening in Newspaper</p>
+            </div>
+        </div>
+        <div class="image-card">
+            <img src="images/image5.jpeg" alt="Team Image 5" />
+            <div class="image-label">
+                <p>Our Second Building on Governor's Street (Torn Down)</p>
+            </div>
+        </div>
+        <div class="image-card">
+            <img src="images/image6.jpeg" alt="Team Image 6" />
+            <div class="image-label">
+                <p>Our Second Building on Governor's Street (Torn Down)</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Footer -->
